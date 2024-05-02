@@ -2,103 +2,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
 }
-body{
-    background-image: url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-}
-.wrapper{
-    height: 100vh;
-    width: 100vw;
+html,body{
+    background-color: white;
+   height: 100vh;
+   width: 100vw;
 }
 .container{
-    
+    height: 100%;
+   width: 100%
+}
+.header-section{
+    width: 100%;
+}
+header{
     display: flex;
+    height: 20vh;
+    justify-content: start;
     align-items: center;
-    justify-content: space-between;
 }
-.head{
-    width: 20%;
+.logo {
+width: 15%;
+margin-left: 8%;
+padding:30px 40px;
 }
-.logo{
-    height: 100px;
-    padding-top: 1.5em;
-   padding-left: 2em;
+nav{
+    width:30%;
 
 }
-.navigation{
-    width: 60%;
-}
-
 nav ul{
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content:space-around;
+    align-items: flex-start;
+
 }
 nav ul li{
-    list-style-type: none;
-    font-size: 1.5em;
-   
-    
+    list-style: none;
 }
 nav ul li a{
     text-decoration: none;
-    color: yellow;
-    padding: 10px 20px;
-    
+    color: black;
+    font-size: 1rem;
+    font-weight: 900;
 }
-nav ul li a:hover{
-    border: 2px solid white;
-   
-    color: yellow;
+.contact-button{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:10% ;
 }
-.button{
-    width: 10%;
-}
-button{
-    padding: 15px 30px;
-    background-color: rgb(246, 80, 14);
+.contact-button button{
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    background: rgba(72, 72, 236, 0.906);
+    padding: 15px 40px;
     color: white;
     border-radius: 10px;
-    margin-right: 40px;
-}
-button:hover{
-    border:2px solid black ;
-    background-color: white;
-    color: black;
 
 }
-main{
-    height: 55vh;
+.hero-section{
+   
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-h1{
-    padding-top: 100px;
-    font-size: 7rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    color: gold;
-    line-height: 8rem;
+.left-section{
+width: 50%;
+display: flex;
+flex-direction: column;
+margin-left:10% ;
+justify-content: center;
+/* align-items: center; */
 }
-main .button{
-    padding-top: 30px;
+.left-section h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
-footer{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
+.left-section h1 span{
+    color:rgba(72, 72, 236, 0.906);
+   
 }
-.button2{
-    padding-top: 30px;
+.left-section p{
+    padding-top: 25px;
 }
-.button2 button{
-    padding: 20px 40px;
+.left-section button{
+    margin-top: 40px;
+    border: none;
+    font-size: 1rem;
+    background: rgba(72, 72, 236, 0.906);
+    padding: 15px 40px;
+    color: white;
+    border-radius: 10px;
+}
+
+.right-section{
+    width:  50%;
+    padding-right: 10%;
+
+}
+.right-section img{
+    width: 700px;
 }
