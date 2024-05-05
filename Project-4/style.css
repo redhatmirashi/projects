@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+div{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    text-align: center;
+    font-size:4rem ;
+    
+}
+
+@media screen and (max-width:1440px){ 
+    div{
+        background-color: green;
+
+        
+    }
+    div::after{
+        content: "Screen Size 1440px";
+    }
+}
+@media screen and (max-width:1020px){ 
+    div{
+        background-color: orange;
+        
+        
+    }
+    div::after{
+        content: "Screen Size 1020px";
+    }
+}
+@media screen and (max-width:768px){ 
+    div{
+        background-color: aqua;
+        
+        
+    }
+    div::after{
+        content: "Screen Size 786px";
+        
+        }
+}
+@media screen and (max-width:425px){ 
+    div{
+        background-color:brown;  
+    }
+    div::after{
+        content: "Screen Size 425px";
+    }
+}
