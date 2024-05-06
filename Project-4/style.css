@@ -19,8 +19,7 @@ div{
 @media screen and (max-width:1440px){ 
     div{
         background-color: green;
-
-        
+  
     }
     div::after{
         content: "Screen Size 1440px";

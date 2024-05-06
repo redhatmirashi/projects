@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: navy;
+}
+
+nav ul{
+padding: 2px 0px;
+display: flex;
+margin-left: 50%;
+justify-content:space-around;
+align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 5px 20px;   
+}
+nav ul li a{
+    font-size: 1.5rem;
+    list-style: none;
+    color: white;
+    text-decoration: none;   
+}
+nav ul li:first-child{
+    border:  1px solid black;
+    background-color: black;
+    border-radius: 10px;
+    color: black;
+}
+
+nav ul li:hover{
+    background-color: #000;
+    border:1px solid white;
+    border-radius: 10px;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.hero-header{
+display: flex;
+align-items: center;
+justify-content:flex-start;
+gap: 10px;
+}
+.hero-header h1{
+    color: white;
+    font-size: 2.5rem;   
+}
+
+.dev-name h1{
+    color: white;
+    font-size: 3.2rem;
+}
+.dev-name h2{
+    color: yellow;
+    font-size: 2rem;
+}
+
+img[alt="waving"]{
+    height: 45px;
+}
+img[alt="pc-image"]{
+    width:30vw;
+    
+}
+img[alt="project-image"]{
+    width: 15vw;
+}
+img[alt="ham-menu"]{
+    width: 5vw;
+    display: none;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project-header{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.divider{
+    height: 5px;
+    width: 135px;
+    background-color: white;
+    border: 20px;
+    margin-bottom: 10px;
+}
+.project-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+.project-section p{
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+img[alt="img"]{
+width: 1.5vw;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer h1{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+.divider-footer {
+    height: 4px;
+    width: 150px;
+    background-color: white;
+    border: 20px;
+    margin-bottom: 20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+@media screen and  ( max-width: 570px)
+{
+    nav{
+        display: none;
+    }
+    img[alt="ham-menu"]{
+        margin-top: 20px;
+        margin-left: 20px;
+        display: block;
+    }
+    .hero{
+       display: flex;
+       flex-direction: column;
+       align-items:center  ;
+       justify-content: center;
+
+    }
+    img[alt="waving"]{
+        width: 20px;
+        height: 20px
+    }
+    .hero-header h1{
+    font-size: 1.5rem
+    }
+    img[alt="pc-image"]{
+        width: 50vw;
+    }
+    .project-section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    img[alt="project-image"]{
+        width: 50vw;
+    }
+    .footer h1{
+        font-size: 1.5rem
+    }
+    .divider-footer{
+        width: 125px;
+    }
+    img[alt="img"]{
+        width: 6vw;
+    }
+
+};
+@media screen and  ( min-width: 477px)
+{
+   
+};
+    
+    
