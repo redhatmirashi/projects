@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+      
+        body{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       }
+.container {
+    position: absolute;
+    top: 30%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter App</h1>
+    <div class="operator">
+        <button id="decrement" onclick="
+        document.querySelector('#total').innerText=counter--;
+        " >Decrement By 1</button> 
+    <span id="total"></span>
+    <button id="increment"onclick="
+    document.querySelector('#total').innerText=counter++;
+    ">Increment By 1</button> 
+    <br>
+    </div>
+    <button id="reset" onclick="
+    document.querySelector('#total').innerText=0;
+    ">Reset Value</button>
+
+    </div>
+    <script>
+        let counter=0;
+        document.querySelector('#total').innerText=counter;
+        document.querySelector('#total').style.border="1px solid black";
+        document.querySelector('#total').style.padding="1.5px 8px";
+
+
+    </script>
+</body>
+</html>

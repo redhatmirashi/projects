@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyDownUp</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- <input type="text" id="key" placeholder="Press Up or Down Key"> -->
+<h2>Press Up or Down Key</h2>
+    <script>
+        document.addEventListener("keydown",welcome);
+        function welcome(){
+            alert("You Had Press Down key");
+        };
+        document.addEventListener("keyup",welcome);
+        function welcome(){
+            alert("You Had Press up key");
+        };
+    </script>
+</body>
+</html>
