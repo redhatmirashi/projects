@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+function countOccurrences(text) {
+    const words = text.split(' ');
+    const wordCount = new Map();
+    
+    for (const word of words) {
+        wordCount.set(word, (wordCount.get(word) || 0) + 1);
+    }
+    
+    return wordCount;
+}
+
+// Example usage:
+const text = "hello world hello";
+console.log(countOccurrences(text)); // Map { 'hello' => 2, 'world' => 1 }
+
+
+
+
+
+    </script>
+</body>
+</html>

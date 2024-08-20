@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+function extractPersonDetails(person) {
+    const { name, address: { street } } = person;
+    return { name, street };
+}
+
+// Example usage:
+const person = {
+    name: "John Doe",
+    age: 30,
+    address: {
+        street: "123 Main St",
+        city: "New York",
+        country: "USA"
+    }
+};
+
+console.log(extractPersonDetails(person)); // { name: 'John Doe', street: '123 Main St' }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
