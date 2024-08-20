@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+class User {
+    constructor(username, password) {
+        this.username = username;
+        this._password = password;
+    }
+
+    get password() {
+        return '*'.repeat(this._password.length);
+    }
+
+    set password(newPassword) {
+        if (newPassword.length >= 8 && /[A-Z]/.test(newPassword) && /\d/.test(newPassword)) {
+            this._password = newPassword;
+        } else {
+            console.error("Error: Password must be at least 8 characters long, contain at least one number, and one uppercase letter.");
+        }
+    }
+}
+
+// Example Usage
+const user = new User("john_doe", "Password123");
+console.log(user.password);  // "***********"
+user.password = "newPass1";  // Error message
+user.password = "NewPassword1";
+console.log(user.password);  // "***********"
+
+
+
+
+
+    </script>
+</body>
+</html>

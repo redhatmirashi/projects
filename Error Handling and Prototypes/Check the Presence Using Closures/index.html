@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+
+function numberChecker(numbers) {
+    return function(number) {
+        return numbers.includes(number);
+    };
+}
+
+// Example Usage
+const checkNumber = numberChecker([1, 2, 3, 4, 5]);
+console.log(checkNumber(3));  // true
+console.log(checkNumber(7));  // false
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+function filterByCategory(products) {
+    return function(category) {
+        return products.filter(product => product.category === category);
+    };
+}
+
+// Example Usage
+const products = [
+    {name: "Laptop", category: "Electronics"},
+    {name: "Shirt", category: "Clothing"},
+    {name: "Phone", category: "Electronics"}
+];
+
+const filterElectronics = filterByCategory(products);
+console.log(filterElectronics("Electronics"));  // [{name: "Laptop", ...}, {name: "Phone", ...}]
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

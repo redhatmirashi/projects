@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+function getPerson(person) {
+    try {
+        if (typeof person !== 'object' || !person.name || !person.age) {
+            throw new Error("Invalid parameter type");
+        }
+        return `Name: ${person.name}, Age: ${person.age}`;
+    } catch (error) {
+        return error.message;
+    }
+}
+
+// Example Usage
+console.log(getPerson({name: "John", age: 30}));  // "Name: John, Age: 30"
+console.log(getPerson("Not an object"));          // "Invalid parameter type"
+
+
+
+
+
+    </script>
+</body>
+</html>
