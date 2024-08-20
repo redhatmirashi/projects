@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+function ageInDays(person) {
+  const fullName = `${person.firstName} ${person.lastName}`;
+  const ageInDays = person.age * 365;
+  return function logMessage() {
+    console.log(`The person's full name is ${fullName} and their age in days is ${ageInDays}.`);
+  };
+}
+
+const person = { firstName: "John", lastName: "Doe", age: 30 };
+const logFunc = ageInDays(person);
+logFunc(); // The person's full name is John Doe and their age in days is 10950.
+
+
+
+
+
+    </script>
+</body>
+</html>

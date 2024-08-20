@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+
+
+function arrangeBooks(books, callback) {
+  const titles = books.map((book) => book.title);
+  titles.sort();
+  callback(titles);
+}
+
+const books = [
+  { title: "Book A", author: "Author A", year: 2020 },
+  { title: "Book C", author: "Author C", year: 2018 },
+  { title: "Book B", author: "Author B", year: 2019 },
+];
+
+arrangeBooks(books, (titles) => console.log(titles)); // ["Book A", "Book B", "Book C"]
+
+
+
+
+    </script>
+</body>
+</html>
