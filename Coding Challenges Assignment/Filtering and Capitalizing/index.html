@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterning</title>
+</head>
+<body>
+
+    
+    <script>
+let books = [
+    { title: "Book1", author: "author one", year: 2009 },
+    { title: "Book2", author: "author two", year: 2012 },
+    { title: "Book3", author: "author three", year: 2015 },
+];
+
+let filteredBooks = books.filter(book => book.year > 2010)
+    .map(book => {
+        return {
+            ...book,
+            author: book.author.toUpperCase()
+        };
+    });
+
+console.log(filteredBooks);
+
+
+    </script>
+</body>
+
+</html>

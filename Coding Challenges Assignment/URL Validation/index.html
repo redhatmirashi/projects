@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse_string</title>
+</head>
+<body>
+
+    
+    <script>
+function validateURL(url) {
+    let regex = /^(http:\/\/|https:\/\/)[\w\d\-._~:\/?#[\]@!$&'()*+,;=]+$/;
+    if (regex.test(url)) {
+        console.log("Valid URL");
+    } else {
+        console.log("Invalid URL");
+    }
+}
+
+let valid=validateURL("https://linkedin.com");
+console.log(valid)
+
+    </script>
+</body>
+
+</html>

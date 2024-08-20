@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse_string</title>
+</head>
+<body>
+
+    
+    <script>
+function validateLinkedInURL(url) {
+    let regex = /^https:\/\/www\.linkedin\.com\/in\/[a-zA-Z0-9_-]{5,30}$/;
+    if (regex.test("url")) {
+        console.log("Valid LinkedIn URL");
+    } else {
+        console.log("Invalid LinkedIn URL");
+    }
+}
+
+let valid=validateLinkedInURL("https://www.linkedin.com/in/valid-profile");
+console.log(valid)
+
+    </script>
+</body>
+
+</html>

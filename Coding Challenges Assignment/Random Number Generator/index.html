@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomize</title>
+</head>
+<body>
+
+    
+    <script>
+let delay = 3; // in seconds
+
+let intervalId = setInterval(() => {
+    console.log(`Time remaining: ${delay} seconds`);
+    delay--;
+    if (delay < 0) {
+        clearInterval(intervalId);
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        console.log(`Generated random number: ${randomNumber}`);
+    }
+}, 1000);
+
+
+    </script>
+</body>
+
+</html>
